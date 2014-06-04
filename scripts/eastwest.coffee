@@ -19,7 +19,8 @@
 
 URL = "http://www.youtube.com/watch?v=gODZzSOelss"
 
-site = "http://collegebowl.avatarpro.biz/"
+#site = "http://collegebowl.avatarpro.biz/"
+site = "http://sleepy-cliffs-8616.herokuapp.com/"
 
 module.exports = (robot) ->
   robot.respond /(eastwest|east|west)(?: me)?(?: )?(video|url)?/i, (msg) ->
@@ -35,6 +36,6 @@ module.exports = (robot) ->
       msg.http(url).get() (err, res, body) ->
         try
           player = JSON.parse(body)[0]
-          msg.send "#{player.image}\n#{player.name}"
+          msg.send "#{player.image}\n#{player.name}\n#{player.college}"
         catch error
           msg.send "I DUN FUCKED UP"
