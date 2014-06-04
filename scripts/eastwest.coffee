@@ -43,6 +43,6 @@ module.exports = (robot) ->
       msg.http(url).get() (err, res, body) ->
         try
           player = JSON.parse(body)[0]
-          msg.send "#{player.image}\n>#{player.name}\n>#{player.college}"
+          msg.send "#{player.image}\n>*#{player.name}*\n>#{player.college}"
         catch error
           msg.send "I DUN FUCKED UP"
