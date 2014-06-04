@@ -29,5 +29,6 @@
 "whos-turn.coffee",
 "wikipedia.coffee",
 "wolfram.coffee",
+"wordnik.coffee",
 "wunderground.coffee"
 ]
