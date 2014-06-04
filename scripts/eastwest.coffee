@@ -12,20 +12,27 @@
 #   east me - select a random player from the east
 #   west me - select a random player from the west
 #   eastwest me - select a random player
-#   eastwest video - print out the youtube link
+#   eastwest video - print out the youtube link for version 1
+#   eastwest video 2 - print out the youtube link for version 2
 #
 # Author:
 #   mkemp
 
-URL = "http://www.youtube.com/watch?v=gODZzSOelss"
+URL1 = "http://www.youtube.com/watch?v=gODZzSOelss"
+URL2 = "http://www.youtube.com/watch?v=rT1nGjGM2p8"
 
-#site = "http://collegebowl.avatarpro.biz/"
-site = "http://sleepy-cliffs-8616.herokuapp.com/"
+site = "http://collegebowl.avatarpro.biz/"
 
 module.exports = (robot) ->
-  robot.respond /(eastwest|east|west)(?: me)?(?: )?(video|url)?/i, (msg) ->
+  robot.respond /(eastwest|east|west)(?: me)?(?: )?(video|url)?(?: )?(1|2)?/i, (msg) ->
     if msg.match[2]
-      msg.send URL
+        switch msg.match[3]
+            when '1'
+                msg.send URL1
+            when '2'
+                msg.send URL2
+            else
+                msg.send URL1
     else
       url = site
       switch msg.match[1].toLowerCase()
