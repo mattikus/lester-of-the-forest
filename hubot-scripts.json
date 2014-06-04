@@ -20,7 +20,7 @@
 "lyrics.coffee",
 "points.coffee",
 "redis-brain.coffee",
-"shipit.coffee"
+"shipit.coffee",
 "sudo.coffee",
 "update.coffee",
 "urban.coffee",
@@ -28,5 +28,5 @@
 "whos-turn.coffee",
 "wikipedia.coffee",
 "wolfram.coffee",
-"wunderground.coffee",
+"wunderground.coffee"
 ]
