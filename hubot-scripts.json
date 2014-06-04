@@ -22,6 +22,7 @@
 "redis-brain.coffee",
 "shipit.coffee",
 "sudo.coffee",
+"tpb.coffee",
 "update.coffee",
 "urban.coffee",
 "wat.coffee",
