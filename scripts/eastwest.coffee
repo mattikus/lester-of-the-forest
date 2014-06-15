@@ -46,21 +46,22 @@ module.exports = (robot) ->
           #msg.send "#{player.image}\n>*#{player.name}*\n>#{player.college}"
           fields = []
           fields.push
+            title: ""
+            value: player.image
+          fields.push
             title: "Name"
             value: player.name
             short: true
-
           fields.push
             title: "School"
             value: player.college
             short: true
-
           payload =
             message: msg.message
             unfurl_links: true
             content:
-              fallback: "MEOW"
-              pretext: player.image
+              fallback: "#{player.name}"
+              pretext: ""
               text: ""
               color: "#FF0000"
               fields: fields
