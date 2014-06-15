@@ -44,10 +44,8 @@ module.exports = (robot) ->
         try
           player = JSON.parse(body)[0]
           #msg.send "#{player.image}\n>*#{player.name}*\n>#{player.college}"
+          msg.send player.image
           fields = []
-          fields.push
-            title: ""
-            value: player.image
           fields.push
             title: "Name"
             value: player.name
