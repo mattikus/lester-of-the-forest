@@ -43,28 +43,7 @@ module.exports = (robot) ->
       msg.http(url).get() (err, res, body) ->
         try
           player = JSON.parse(body)[0]
-          #msg.send "#{player.image}\n>*#{player.name}*\n>#{player.college}"
-          msg.send player.image
-          fields = []
-          fields.push
-            title: "Name"
-            value: player.name
-            short: true
-          fields.push
-            title: "School"
-            value: player.college
-            short: true
-          payload =
-            message: msg.message
-            unfurl_links: true
-            content:
-              fallback: "#{player.name}"
-              pretext: ""
-              text: ""
-              color: "#FF0000"
-              fields: fields
-
-          robot.emit 'slack-attachment', payload
-              
         catch error
           msg.send "I DUN FUCKED UP: #{error}"
+
+        msg.send "#{player.image}\n>>>*#{player.name}*\n#{player.college}"
