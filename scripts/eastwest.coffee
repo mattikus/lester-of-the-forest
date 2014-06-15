@@ -60,36 +60,11 @@ module.exports = (robot) ->
             content:
               fallback: "MEOW"
               text: player.image
-              pretext: "Lets meet a player:"
               color: "#FF0000"
               fields: fields
+              unfurl_links: true
 
           robot.emit 'slack-attachment', payload
               
         catch error
           msg.send "I DUN FUCKED UP: #{error}"
-
-
-
-  robot.respond /demo-attachment$/i, (msg) =>
-    fields = []
-    fields.push
-      title: "Field 1: Title"
-      value: "Field 1: Value"
-      short: true
-
-    fields.push
-      title: "Field 2: Title"
-      value: "Field 2: Value"
-      short: true
-
-    payload = 
-      message: msg.message
-      content:
-        text: "Attachement Demo Text"
-        fallback: "Fallback Text"
-        pretext: "This is Pretext"
-        color: "#FF0000"
-        fields: fields
-
-    robot.emit 'slack-attachment', payload
