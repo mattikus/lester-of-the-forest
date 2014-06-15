@@ -49,15 +49,21 @@ module.exports = (robot) ->
             title: "Name"
             value: player.name
             short: true
+
           fields.push
             title: "School"
             value: player.college
             short: true
+
           payload =
-              message: player.image
-              content:
-                  fields: fields
+            message: player.image
+            content:
+              fallback: "MEOW"
+              pretext: "Lets meet a player:"
+              color: "#FF0000"
+              fields: fields
+
           robot.emit 'slack-attachment', payload
               
         catch error
-          msg.send "I DUN FUCKED UP"
+          msg.send "I DUN FUCKED UP: #{error}"
