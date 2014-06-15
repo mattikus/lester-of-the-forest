@@ -57,13 +57,13 @@ module.exports = (robot) ->
 
           payload =
             message: msg.message
+            unfurl_links: true
             content:
               fallback: "MEOW"
               pretext: player.image
               text: ""
               color: "#FF0000"
               fields: fields
-              unfurl_links: true
 
           robot.emit 'slack-attachment', payload
               
