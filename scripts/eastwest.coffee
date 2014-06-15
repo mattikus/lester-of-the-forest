@@ -59,6 +59,7 @@ module.exports = (robot) ->
             message: msg.message
             content:
               fallback: "MEOW"
+              pretext: ""
               text: player.image
               color: "#FF0000"
               fields: fields
