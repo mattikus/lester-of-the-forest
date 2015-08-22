@@ -2,17 +2,17 @@
 #   "Makes your Hubot even more Clever™"
 #
 # Dependencies:
-#   "cleverbot-node": "0.1.1"
+#   "cleverbot-node": "0.2.1"
 #
 # Configuration:
 #   None
 #
 # Commands:
-#  hubot c <input>
-#  cleverbot <input>
+#   hubot c <input>
 #
 # Author:
 #   ajacksified
+#   Stephen Price <steeef@gmail.com>
 
 cleverbot = require('cleverbot-node')
 
@@ -21,9 +21,4 @@ module.exports = (robot) ->
 
   robot.respond /c (.*)/i, (msg) ->
     data = msg.match[1].trim()
-    c.write(data, (c) => msg.reply(c.message))
-
-  robot.hear /^cleverbot(?:,|:)? (.*)/i, (msg) ->
-    data = msg.match[1].trim()
-    c.write(data, (c) => msg.reply(c.message))
-
+    cleverbot.prepare(( -> c.write(data, (c) => msg.send(c.message))))
