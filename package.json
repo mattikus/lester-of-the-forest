@@ -22,7 +22,8 @@
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.3.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "underscore.string": "2.3.0"
   },
   "engines": {
     "node": "0.10.x"
