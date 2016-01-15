@@ -2,6 +2,12 @@
 #   Implements '@antisocial' from the old MUD beacuse I miss it.
 #   This does not allow Hubot to do mathematics.
 #
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
 # Commmands:
 #   charades <target> - You indicate a correct charades answer!
 #   cheese <target> - Mmmm... Cheese
