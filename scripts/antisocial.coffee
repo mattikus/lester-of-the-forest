@@ -36,6 +36,15 @@ module.exports = (robot) ->
         fire:
             with_target: "%TARGET: You're fired."
             no_target: "EVACUATE THE BUILDING!"
+        pound:
+            with_target: "@%SUBJECT pounds and pounds %TARGET with a shovel."
+            no_target: "@%SUBJECT: I'll take 'Things you just want to pound and pound with a shovel' for $300, Alex.'"
+        eye:
+            with_target: "@%SUBJECT eyes %TARGET warily."
+            no_target: "@%SUBJECT: nay."
+        thank:
+            with_target: "@%SUBJECT [to %TARGET]: Thanks %TARGET! BOK BOK!"
+            no_target: "@%SUBJECT: I DON'T KNOW WHAT TO SAY WHEN YOU SAY THAT."
 
     robot.hear /^([^ ]+) *(.*)/i, (msg) ->
         user = msg.message.user.name
