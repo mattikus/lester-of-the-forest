@@ -40,7 +40,6 @@ module.exports = (robot) ->
         cmd = msg.match[1].trim()
         target = msg.match[2].trim()
 
-
         if cmd == 'rand'
             all_antisocials = Object.keys(antisocials)
             antisocial = antisocials[all_antisocials[Math.floor(all_antisocials.length * Math.random())]]
@@ -49,8 +48,11 @@ module.exports = (robot) ->
 
         if antisocial
            if target
-               message = antisocial['with_target']
-               message = message.replace /%TARGET/g, target
+               if target == 'lester' or target == '@lester'
+                   message = "@#{user}: I THINK NOT."
+               else
+                   message = antisocial['with_target']
+                   message = message.replace /%TARGET/g, target
            else
                message = antisocial['no_target']
 
