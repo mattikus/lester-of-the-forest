@@ -33,7 +33,9 @@ module.exports = (robot) ->
         chuck:
             with_target: "@%SUBJECT wishes %TARGET a happy birthday.  And then this big hairy mouse with very bored eyes comes in and dances with %TARGET."
             no_target: "@%SUBJECT: all the time singing music (think chipmonks on speed) broadcast in mono over the sound system with peak levels that make the speakers crackle"
-
+        fire:
+            with_target: "%TARGET: You're fired."
+            no_target: "EVACUATE THE BUILDING!"
 
     robot.hear /^([^ ]+) *(.*)/i, (msg) ->
         user = msg.message.user.name
