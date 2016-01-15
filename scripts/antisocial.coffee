@@ -8,7 +8,7 @@
 # Configuration:
 #   None
 #
-# Commmands:
+# Commands:
 #   charades <target> - You indicate a correct charades answer!
 #   cheese <target> - Mmmm... Cheese
 #   chuck <target> - You introduce things to a new level of pain.
