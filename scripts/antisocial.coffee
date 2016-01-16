@@ -83,7 +83,10 @@ module.exports = (robot) ->
         if antisocial
            if target
                if target == 'lester' or target == '@lester'
-                   message = "@#{user}: I THINK NOT."
+                   if cmd == 'thank'
+                     message = "@#{user}: You're welcome!"
+                   else
+                     message = "@#{user}: I THINK NOT."
                else
                    message = antisocial['with_target']
                    message = message.replace /%TARGET/g, target
