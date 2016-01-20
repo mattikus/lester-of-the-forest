@@ -24,7 +24,7 @@
 #   thank <target> - BOK BOK!
 #
 # Author:
-#   ajcherry
+#   ajcherry (Andrew Cherry)
 
 module.exports = (robot) ->
 
