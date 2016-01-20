@@ -72,6 +72,7 @@ module.exports = (robot) ->
     robot.hear /^([^ ]+) *(.*)/i, (msg) ->
         user = msg.message.user.name
         cmd = msg.match[1].trim()
+        cmd = cmd.toLowerCase()
         target = msg.match[2].trim()
 
         if cmd == 'rand'
@@ -82,7 +83,7 @@ module.exports = (robot) ->
 
         if antisocial
            if target
-               if target == 'lester' or target == '@lester'
+               if target.match(/^\@?lester$/i)
                    if cmd == 'thank'
                      message = "@#{user}: You're welcome!"
                    else
