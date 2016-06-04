@@ -79,9 +79,8 @@ module.exports = (robot) ->
         target = msg.match[2].trim()
 
         if cmd == 'rand'
-            #all_antisocials = Object.keys(antisocials)
-            #antisocial = antisocials[all_antisocials[Math.floor(all_antisocials.length * Math.random())]]
-            antisocial = msg.random antisocials
+            all_antisocials = Object.keys(antisocials)
+            antisocial = antisocials[all_antisocials[Math.floor(all_antisocials.length * Math.random())]]
         else
             antisocial = antisocials[cmd]
 
