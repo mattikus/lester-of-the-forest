@@ -68,7 +68,7 @@ module.exports = (robot) ->
         thank:
             with_target: "@%SUBJECT [to %TARGET]: Thanks %TARGET! BOK BOK!"
             no_target: "@%SUBJECT: I DON'T KNOW WHAT TO SAY WHEN YOU SAY THAT."
-	back:
+        back:
             with_target: "@%SUBJECT slowly backs away from %TARGET, careful not to make eye contact."
             no_target: "@%SUBJECT: Little in the middle but ya got much..."
 
