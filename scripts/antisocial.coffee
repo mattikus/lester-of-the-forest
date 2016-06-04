@@ -68,6 +68,9 @@ module.exports = (robot) ->
         thank:
             with_target: "@%SUBJECT [to %TARGET]: Thanks %TARGET! BOK BOK!"
             no_target: "@%SUBJECT: I DON'T KNOW WHAT TO SAY WHEN YOU SAY THAT."
+	back:
+            with_target: "@%SUBJECT slowly backs away from %TARGET, careful not to make eye contact."
+            no_target: "@%SUBJECT: Little in the middle but ya got much..."
 
     robot.hear /^([^ ]+) *(.*)/i, (msg) ->
         user = msg.message.user.name
@@ -76,8 +79,9 @@ module.exports = (robot) ->
         target = msg.match[2].trim()
 
         if cmd == 'rand'
-            all_antisocials = Object.keys(antisocials)
-            antisocial = antisocials[all_antisocials[Math.floor(all_antisocials.length * Math.random())]]
+            #all_antisocials = Object.keys(antisocials)
+            #antisocial = antisocials[all_antisocials[Math.floor(all_antisocials.length * Math.random())]]
+            antisocial = msg.random antisocials
         else
             antisocial = antisocials[cmd]
 
