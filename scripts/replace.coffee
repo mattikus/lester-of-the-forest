@@ -16,5 +16,9 @@ module.exports = (robot) ->
     user = msg.message.user.name
     msg.send "@#{user}: :hi5:"
 
+  robot.hear /:hi5:\s+\@?lester/, (msg) ->
+    user = msg.message.user.name
+    msg.send ":hi5: @#{user}"
+
   robot.hear /s?crusan/i, (msg) ->
     msg.send "DON'T SPEAK ABOUT THAT TRAITOR!"
