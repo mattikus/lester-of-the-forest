@@ -72,7 +72,7 @@ module.exports = (robot) ->
             with_target: "@%SUBJECT slowly backs away from %TARGET, careful not to make eye contact."
             no_target: "@%SUBJECT: Little in the middle but ya got much..."
 
-    robot.hear /^([^ ]+) *(.*)/i, (msg) ->
+    robot.hear /^\!([^ ]+) *(.*)/i, (msg) ->
         user = msg.message.user.name
         cmd = msg.match[1].trim()
         cmd = cmd.toLowerCase()
