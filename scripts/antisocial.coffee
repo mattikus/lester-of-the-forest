@@ -71,6 +71,9 @@ module.exports = (robot) ->
         back:
             with_target: "@%SUBJECT slowly backs away from %TARGET, careful not to make eye contact."
             no_target: "@%SUBJECT: Little in the middle but ya got much..."
+        peer:
+            with_target: "@%SUBJECT peers at %TARGET suspiciously."
+            no_target: "@%SUBJECT peers at nothing in particular for no good reason."
 
     robot.hear /^\!([^ ]+) *(.*)/i, (msg) ->
         user = msg.message.user.name
