@@ -2,7 +2,7 @@
 #   "Makes your Hubot even more Clever™"
 #
 # Dependencies:
-#   "cleverbot-node": "0.2.4"
+#   "cleverbot-node": "0.2.6"
 #
 # Configuration:
 #   None
