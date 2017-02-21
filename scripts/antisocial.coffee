@@ -92,6 +92,8 @@ module.exports = (robot) ->
                if target.match(/^\@?lester$/i)
                    if cmd == 'thank'
                      message = "@#{user}: You're welcome!"
+                   else if cmd == 'flame' 
+                     message = "HELP I'M MELTING!!!"
                    else
                      message = "@#{user}: I THINK NOT."
                else
