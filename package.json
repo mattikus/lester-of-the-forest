@@ -5,7 +5,7 @@
   "author": "Matt Kemp <matt@mattikus.com>",
   "description": "a crazy sonofabitch",
   "dependencies": {
-    "cleverbot-node": "0.2.7",
+    "cleverbot-node": "^0.3.5",
     "hubot": "^2.15.0",
     "hubot-catfacts": "^1.0.1",
     "hubot-decides": "0.0.7",
