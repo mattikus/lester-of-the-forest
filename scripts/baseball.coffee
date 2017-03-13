@@ -23,7 +23,7 @@ names = ["Sleve McDichael", "Onson Sweemey", "Darryl Archideld",
          "Jeromy Gride", "Scott Dourque", "Shown Furcotte", 
          "Dean Wesrey", "Mike Truk", "Dwigt Rortugal",
          "Tim Sandaele", "Karl Dandleton", "Mike Sernandez",
-         "Todd Bonzalez"]
+         "Todd Bonzalez", "Wilson Chul Lee" ]
 
 module.exports = (robot) ->
   robot.respond /(baseball)(?: me)/i, (msg) ->
