@@ -1,14 +1,19 @@
 [
+  "hubot-ascii-art",
+  "hubot-catfacts",
+  "hubot-cleverbot-api",
+  "hubot-decides",
   "hubot-diagnostics",
-  "hubot-help",
-  "hubot-heroku-keepalive",
+  "hubot-google",
   "hubot-google-images",
   "hubot-google-translate",
-  "hubot-pugme",
+  "hubot-help",
+  "hubot-heroku-keepalive",
+  "hubot-humanity",
   "hubot-maps",
+  "hubot-pugme",
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-humanity",
-  "hubot-decides"
+  "hubot-wolfram"
 ]
