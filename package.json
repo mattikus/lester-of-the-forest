@@ -6,7 +6,7 @@
   "description": "a crazy sonofabitch",
   "dependencies": {
     "cleverbot-node": "^0.3.5",
-    "hubot": "^2.15.0",
+    "hubot": "^2.19.0",
     "hubot-catfacts": "^1.0.1",
     "hubot-decides": "0.0.7",
     "hubot-diagnostics": "0.0.1",
@@ -19,12 +19,13 @@
     "hubot-pugme": "^0.1.0",
     "hubot-redis-brain": "0.0.3",
     "hubot-rules": "^0.1.1",
-    "hubot-scripts": "^2.16.2",
+    "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^3.3.0",
-    "wolfram": "^0.2.2"
+    "hubot-slack": "^4.3.3",
+    "wolfram": "^0.3.4"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">= 0.10.x",
+    "npm": ">= 1.1.x"
   }
 }
