@@ -39,7 +39,7 @@ names = ["Sleve McDichael", "Onson Sweemey", "Darryl Archideld",
 
 module.exports = (robot) ->
   robot.respond /(baseball)(?: me)/i, (msg) ->
-      image_number = Math.floor(860 * Math.random())
-      image_url = image_base + image_number + ".jpg"
-      name = names[Math.floor(names.length * Math.random())]
-      msg.send "#{image_url}\n>>>*#{name}*\n"      
+    image_number = Math.floor(860 * Math.random())
+    image_url = image_base + image_number + ".jpg"
+    name = names[Math.floor(names.length * Math.random())]
+    msg.send "#{image_url}\n>>>*#{name}*\n"      
