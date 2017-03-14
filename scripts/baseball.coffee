@@ -9,7 +9,7 @@
 #   None
 #
 # Commands:
-#   baseball me - do the thing
+#   hubot baseball me - do the thing
 #
 # Author:
 #   acherry, based on code from mkemp

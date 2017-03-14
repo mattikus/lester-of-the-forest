@@ -9,12 +9,12 @@
 #   None
 #
 # Commands:
-#   east me - select a random player from the east
-#   west me - select a random player from the west
-#   eastwest me - select a random player
-#   eastwest video - print out the youtube link for version 1
-#   eastwest video 2 - print out the youtube link for version 2
-#   eastwest video 3 - print out the youtube link for version 3
+#   hubot east me - select a random player from the east
+#   hubot west me - select a random player from the west
+#   hubot eastwest me - select a random player
+#   hubot eastwest video - print out the youtube link for version 1
+#   hubot eastwest video 2 - print out the youtube link for version 2
+#   hubot eastwest video 3 - print out the youtube link for version 3
 #
 # Author:
 #   mattikus
