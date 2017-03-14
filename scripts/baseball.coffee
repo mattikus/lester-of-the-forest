@@ -23,7 +23,19 @@ names = ["Sleve McDichael", "Onson Sweemey", "Darryl Archideld",
          "Jeromy Gride", "Scott Dourque", "Shown Furcotte", 
          "Dean Wesrey", "Mike Truk", "Dwigt Rortugal",
          "Tim Sandaele", "Karl Dandleton", "Mike Sernandez",
-         "Todd Bonzalez", "Wilson Chul Lee" ]
+         "Todd Bonzalez", "Wilson Chul Lee", "Nert Bisels",
+	 "Kenn Nitvarn", "Fergit Hote", "Coll Bitzron", 
+	 "Lood Janglosti", "Taenis Tellron", "Marnel Hary",
+	 "Dony Olerberz", "Gin Ginlons", "Wob Wonkoz",
+	 "Tanny Mlitnirt", "Hudgyn Sasdarl", "Fraven Pooth",
+	 "Rarr Dick", "Dorse Hintline", "Roy Gamo",
+	 "Tenpe Laob", "Varlin Genmist", "Pott Korhil",
+	 "Am O'Erson", "Snarry Shitwon", "Bobs Peare",
+	 "Renly Mlynren", "Ceynei Doober", "Hom Wapko",
+	 "Odood Jorgeudey", "Gary Banps", "Jaris Forta",
+	 "Erl Jivlitz", "Lenn Wobses", "Dan Boyo",
+	 "Yans Loovensan", "Mob Welronz", "Bannoe Rodylar",
+	 "Al Swermirstz", "Jinneil Robenko" ]
 
 module.exports = (robot) ->
   robot.respond /(baseball)(?: me)/i, (msg) ->
