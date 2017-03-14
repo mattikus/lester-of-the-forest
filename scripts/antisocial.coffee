@@ -9,19 +9,19 @@
 #   None
 #
 # Commands:
-#   charades <target> - You indicate a correct charades answer!
-#   cheese <target> - Mmmm... Cheese
-#   chuck <target> - You introduce things to a new level of pain.
-#   eye <target> - You eye things warily.
-#   fire <target> - You terminate an employee.
-#   flame <target> - You flame things.
-#   greet <target> - You greet things.
-#   grid <target> - You grid things griddily.
-#   ivan <target> - You misspell a word or two.
-#   maul <target> - You maul things like a typing bear.
-#   nelson <target> - You ridicule things in a Nelson-like fashion
-#   pound <target> - You engage in a satisfying experience.
-#   thank <target> - BOK BOK!
+#   !charades <target> - You indicate a correct charades answer!
+#   !cheese <target> - Mmmm... Cheese
+#   !chuck <target> - You introduce things to a new level of pain.
+#   !eye <target> - You eye things warily.
+#   !fire <target> - You terminate an employee.
+#   !flame <target> - You flame things.
+#   !greet <target> - You greet things.
+#   !grid <target> - You grid things griddily.
+#   !ivan <target> - You misspell a word or two.
+#   !maul <target> - You maul things like a typing bear.
+#   !nelson <target> - You ridicule things in a Nelson-like fashion
+#   !pound <target> - You engage in a satisfying experience.
+#   !thank <target> - BOK BOK!
 #
 # Author:
 #   ajcherry (Andrew Cherry)
