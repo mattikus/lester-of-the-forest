@@ -17,14 +17,14 @@
 image_base = "http://www.mcs.anl.gov/~acherry/bb-images/"
 
 names = ["Sleve McDichael", "Onson Sweemey", "Darryl Archideld",
-         "Anatoli Smorin", "Rey McSriff", "Glenallen Mixon", 
+         "Anatoli Smorin", "Rey McSriff", "Glenallen Mixon",
          "Mario McRlwain", "Raul Chamgerlain", "Kevin Nogilny",
          "Tony Smehrik", "Bobson Dugnutt", "Willie Dustice",
-         "Jeromy Gride", "Scott Dourque", "Shown Furcotte", 
+         "Jeromy Gride", "Scott Dourque", "Shown Furcotte",
          "Dean Wesrey", "Mike Truk", "Dwigt Rortugal",
          "Tim Sandaele", "Karl Dandleton", "Mike Sernandez",
          "Todd Bonzalez", "Wilson Chul Lee", "Nert Bisels",
-         "Kenn Nitvarn", "Fergit Hote", "Coll Bitzron", 
+         "Kenn Nitvarn", "Fergit Hote", "Coll Bitzron",
          "Lood Janglosti", "Taenis Tellron", "Marnel Hary",
          "Dony Olerberz", "Gin Ginlons", "Wob Wonkoz",
          "Tanny Mlitnirt", "Hudgyn Sasdarl", "Fraven Pooth",
@@ -38,8 +38,9 @@ names = ["Sleve McDichael", "Onson Sweemey", "Darryl Archideld",
          "Al Swermirstz", "Jinneil Robenko", "Bobson Allcock Dugnut" ]
 
 module.exports = (robot) ->
-  robot.respond /(baseball)(?: me)/i, (msg) ->
+  robot.respond /baseball( me)?$/i, (msg) ->
     image_number = Math.floor(860 * Math.random())
     image_url = image_base + image_number + ".jpg"
     name = names[Math.floor(names.length * Math.random())]
-    msg.send "#{image_url}\n>>>*#{name}*\n"      
+    msg.send "#{image_url}\n>>>*#{name}*\n"
+
