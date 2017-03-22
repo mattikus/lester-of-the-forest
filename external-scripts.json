@@ -4,6 +4,7 @@
   "hubot-cleverbot-api",
   "hubot-decides",
   "hubot-diagnostics",
+  "hubot-github-webhooks-listener",
   "hubot-google",
   "hubot-google-images",
   "hubot-google-translate",
