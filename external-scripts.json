@@ -14,6 +14,5 @@
   "hubot-pugme",
   "hubot-redis-brain",
   "hubot-rules",
-  "hubot-shipit",
-  "hubot-wolfram"
+  "hubot-shipit"
 ]
