@@ -79,7 +79,7 @@ module.exports = (robot) ->
       cmd = msg.match[1].trim().toLowerCase()
       target = msg.match[2].trim()
 
-      antisocial = if cmd == 'rand' then msg.rand antisocials else antisocials[cmd]
+      antisocial = if cmd == 'rand' then antisocials[msg.random Object.keys(antisocials)] else antisocials[cmd]
       return if not antisocial
 
       if target.match /^@?lester$/i
